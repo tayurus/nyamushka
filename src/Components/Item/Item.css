@@ -31,11 +31,14 @@
 }
 
 .Item__portionCount{
+    margin-top: 10px;
+    line-height: 15px;
     color: #666666;
     font-family: "Trebuchet MS";
 }
 
 .Item__gift{
+    line-height: 15px;
     color: #666666;
     font-family: "Trebuchet MS";
 }
@@ -69,6 +72,24 @@
     font-size: 21px;
     position: relative;
     bottom: 5px;
+}
+
+.Item__buy{
+    white-space: nowrap;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Trebuchet MS";
+}
+
+.Item__buy-link{
+    color: #1698d9;
+    font-family: "Trebuchet MS";
+    font-weight: 700;
+    border-bottom: 1px dashed #1698d9;
 }
 
 .Item__nyamushka{
