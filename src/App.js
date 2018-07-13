@@ -28,7 +28,7 @@ class App extends Component {
                     portionCount: 40,
                     gift: ["2 мыши в подарок"],
                     weight: "2",
-                    status: "notSelected",
+                    status: "selected",
                     selectedText: "Головы щучьи с чесноком да свежайшая сёмгушка."
                 },
                 {

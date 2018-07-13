@@ -5,13 +5,15 @@ export class Item extends React.Component {
         super(props);
     }
 
-    showSelectedHoverTitle(text, textColor) {
-        if (this.refs.mainWrapper.classList.contains("selected")){
+    showSelectedHoverTitle(mode, text) {
+        if (this.refs.mainWrapper.classList.contains("selected") && mode === "MouseEnter"){
             this.refs.title.innerHTML = text;
             this.refs.title.style.color = "#e62e7a";
         }
-        else {
+        if (mode === "MouseLeave")
+        {
             this.refs.title.innerHTML = this.props.item.title;
+            this.refs.title.style.color = "#666";
         }
     }
 
@@ -21,8 +23,8 @@ export class Item extends React.Component {
                 <div
                     className="Item"
                     onClick={() => this.props.toggleStatus(this.props.item.id) }
-                    onMouseEnter={() => this.showSelectedHoverTitle(this.props.item.titleSelectedHover)}
-                    onMouseLeave={() => this.showSelectedHoverTitle(this.props.item.title)}
+                    onMouseEnter={() => this.showSelectedHoverTitle("MouseEnter", this.props.item.titleSelectedHover)}
+                    onMouseLeave={() => this.showSelectedHoverTitle("MouseLeave", this.props.item.title)}
                 >
                     <div class="Item__inner-wrapper" />
                     <div className="Item__title" ref="title">
