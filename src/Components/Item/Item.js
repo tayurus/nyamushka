@@ -10,6 +10,7 @@ export class Item extends React.Component {
             this.refs.title.innerHTML = text;
             this.refs.title.style.color = "#e62e7a";
         }
+
         if (mode === "MouseLeave")
         {
             this.refs.title.innerHTML = this.props.item.title;

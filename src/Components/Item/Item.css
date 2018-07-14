@@ -32,11 +32,6 @@
     font-family: "Trebuchet MS";
 }
 
-.Item-wrapper.selected .Item__title{
-    color: #e62e7a;
-    font-family: "Trebuchet MS";
-}
-
 .Item__name {
     color: #000000;
     font-family: "Trebuchet MS";
@@ -82,6 +77,9 @@
 
 .Item-wrapper.disabled .Item__weight {
     background: #b3b3b3;
+}
+.Item-wrapper.selected .Item__weight {
+    background: #e52e7a;
 }
 
 .Item-wrapper.disabled .Item__label_buy {
